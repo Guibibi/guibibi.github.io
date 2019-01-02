@@ -17,6 +17,25 @@
   transition: all 0.7s ease-out;
 }
 
+.menu-btn.close {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.menu-btn.close .btn-line:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.close .btn-line:nth-child(3) {
+  -webkit-transform: rotate(135deg) translate(-6px, 6px);
+          transform: rotate(135deg) translate(-6px, 6px);
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -63,6 +82,7 @@ h3.title {
 h1.subtitle,
 h2.subtitle,
 h3.subtitle {
+  color: black;
   margin-bottom: 2rem;
   padding: 0.2rem 1rem;
   background-color: rgba(73, 73, 73, 0.5);
