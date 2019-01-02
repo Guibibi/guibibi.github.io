@@ -1,72 +1,73 @@
 @import 'config';
+@import 'menu';
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-
-body{
-    @include background();
-    background: $primary-color;
-    height: 100%;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5;
+body {
+  @include background();
+  background: $primary-color;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
 }
 
 //Heading
-h1, h2, h3{
-    margin: 0;
-    font-weight: 400;
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
 
-    &.title{
-        font-size: 6rem;
-    }
+  &.title {
+    font-size: 6rem;
+  }
 
-    &.subtitle{
-        margin-bottom: 2rem;
-        padding: 0.2rem 1rem;
-        background-color: rgba(lighten($primary-color, 2),0.5);
-    }
+  &.subtitle {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background-color: rgba(lighten($primary-color, 2), 0.5);
+  }
 }
 
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
-header{
-    position: fixed;
-    z-index: 2;
-    width: 100%;
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
 }
 
-.text-secondary{
-    color: $secondary-color;
+.text-secondary {
+  color: $secondary-color;
 }
 
-main{
-    padding: 4rem;
-    height: 100%;
+main {
+  padding: 4rem;
+  height: 100%;
 
-    .icons {
-        margin-top: 1rem;
+  .icons {
+    margin-top: 1rem;
 
-        a {
-            padding: 0.4rem;
+    a {
+      padding: 0.4rem;
 
-            &:hover{
-                color: $secondary-color;
-                @include easeOut();
-            }
-        }
+      &:hover {
+        color: $secondary-color;
+        @include easeOut();
+      }
     }
+  }
 
-    &#home{
-        overflow: hidden;
-        h1 {
-            margin-top: 20vh;
-        }
+  &#home {
+    overflow: hidden;
+    h1 {
+      margin-top: 20vh;
     }
+  }
 }
-
