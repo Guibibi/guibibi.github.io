@@ -1,0 +1,35 @@
+//ExtraLarge - Widescreen - Width: Min 1171px
+@include mediaXl {
+}
+//Desktop and Laptop - Width: 769px - 1170px
+@include mediaLg {
+}
+//Table & small laptop - Width: Max 768px
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+
+    .title {
+      line-height: 1;
+      margin-bottom: 2rem;
+    }
+  }
+}
+//Phones - Width: Max 500px
+@include mediaSm {
+  main#home h1 {
+    font-size: 3em;
+  }
+
+  .portrait {
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  .nav-item {
+    a {
+      font-size: 0.8em;
+    }
+  }
+}
