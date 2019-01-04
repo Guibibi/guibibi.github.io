@@ -1,5 +1,15 @@
 //ExtraLarge - Widescreen - Width: Min 1171px
 @include mediaXl {
+  .portrait {
+    min-width: 500px;
+    min-height: 500px;
+  }
+
+  .nav-item {
+    a {
+      font-size: 2.2em;
+    }
+  }
 }
 //Desktop and Laptop - Width: 769px - 1170px
 @include mediaLg {
